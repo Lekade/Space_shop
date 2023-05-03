@@ -1,0 +1,76 @@
+body{
+	width:100%;
+	font-family: 'Jura', sans-serif;
+	font-style: normal;
+	color: #282828;
+}
+
+	*,
+:before,
+:after{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin:0;
+}
+
+p{
+	margin:0;
+}
+
+html{
+	font-size: calc(100vw/1920*10);
+
+}
+
+
+.wrapper{
+	position: relative;
+	width:100%;
+	overflow: hidden;
+}
+
+.container{
+	margin: 0 auto;
+	padding:0 1rem;
+	width: 100%;
+	max-width: 159rem;
+}
+
+.wrapper {}
+.header {}
+.container {}
+.header__inner {}
+.logo {}
+.btn {}
+.main {}
+.newShips {}
+.title_h1 {}
+.newShips__inner {}
+.shipItem {}
+.shipItem__text {}
+.price_block {}
+.price_old {}
+.price {}
+.shipDay {}
+.shipDay__inner {}
+.shipDay__info {}
+.shipDay__info__img {}
+.shipDay__info_characteristics {}
+.power {}
+.shipDay__name {}
+.shipDay__text {}
+.shipDay__price {}
+.discount {}
+.economy {}
+.economy__itom {}
+.total {}
+.footer {}
+.social {}
+.social__text {}
+.social_link {}
+.footer__bottom {}
+.footer__bootom__info {}
