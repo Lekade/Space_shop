@@ -15,6 +15,7 @@
 }
 
 body{
+	height: 100%;
 	width:100%;
 	font-family: Segoe UI, sans-serif;
 	font-style: normal;
@@ -39,12 +40,14 @@ p{
 
 html{
 	font-size: calc(100vw/1000*10);
-
 }
 
 
 .wrapper{
+	min-height: 100vh;
 	position: relative;
+	display: flex;
+	flex-direction: column;
 	width:100%;
 	overflow: hidden;
 	background: linear-gradient(180deg, rgba(19, 19, 22, 0) 0%, #131316 100%), url("./images/static/bg.jpg");
@@ -107,6 +110,7 @@ html{
 }
 
 .main {
+	flex: 1 1 auto;
 	margin-top: 4rem;
 }
 .newShips {}
@@ -371,4 +375,78 @@ html{
 }
 .footer__tel{
 	text-decoration: none;
+}
+
+/*-------------------------------@media------------------------------------*/
+
+@media (max-width: 767px){
+	html{
+		font-size: calc(100vw/767*10);
+	}
+}
+
+@media (max-width: 480px){
+	html{
+		font-size: calc(100vw/480*10);
+	}
+
+	.shipItem {
+		width: 22.5rem;
+		height: 33rem;
+	}
+	.shipItem__text{
+		height: 100%;
+		max-height: 9rem;
+	}
+	.shipItem .btn {
+		width: 20.5rem;
+	}
+	.shipItem:nth-child(4) {
+		width: 22.5rem;
+		height: 33rem;
+	}
+	.shipItem:nth-child(4) .shipItem__img{
+		height: 15rem;
+	}
+	.shipItem:nth-child(4) .btn{
+		width: 20.5rem;
+	}
+	.shipItem:nth-child(5) {
+		width: 46.5rem;
+		height: 33rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.shipItem:nth-child(5) .shipItem__img{
+		width: 35rem;
+		height: 15rem;
+		text-align: center;
+	}
+	.shipItem:nth-child(5) .btn{
+		width: 43.5rem;
+	}
+
+	.shipDay__info {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		align-items: center;
+	}
+	.power {
+		margin-top: 0;
+	}
+	.shipDay__text {
+		font-size: 1.6rem;
+	}
+	.shipDay__info_characteristics {
+		width: 27.5rem;
+		padding-right: 0;
+	}
+	.promo_code {
+		margin-top: 1rem;
+	}
+	.footer__bottom {
+		margin: 3rem 1rem 2.6rem;
+	}
 }
