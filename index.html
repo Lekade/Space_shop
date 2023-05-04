@@ -14,7 +14,7 @@
             <div class="container">
                 <div class="header__inner">
                     <a href="#" class="logo">Space shop</a>
-                    <button class="btn">Личный кабинет</button>
+                    <button class="btn btn_header">Личный кабинет</button>
                 </div>
             </div>
         </header>
@@ -24,26 +24,26 @@
                     <h1 class="title_h1">Наши новинки:</h1>
                     <div class="newShips__inner">
                         <div class="shipItem">
-                            <img src="./images/i1.png" alt="item1">
+                            <img class="shipItem__img" src="./images/i1.png" alt="item1">
                             <p class="shipItem__text">«Чегантина» – парадный боевой крейсер</p>
                             <div class="price_block">
-                                <span class="price_old">$1299</span>
+                                <span class="price price_old">$1299</span>
                                 <span class="price">$999</span>
                             </div>
                             <button class="btn">Заказать</button>
                         </div>
                         <div class="shipItem">
-                            <img src="./images/i2.png" alt="item2">
+                            <img class="shipItem__img" src="./images/i2.png" alt="item2">
                             <p class="shipItem__text">Космический корабль синего цвета
                                 (c локаторами)</p>
                             <div class="price_block">
-                                <span class="price_old">$1899</span>
+                                <span class="price price_old">$1899</span>
                                 <span class="price">$1 299</span>
                             </div>
                             <button class="btn">Заказать</button>
                         </div>
                         <div class="shipItem">
-                            <img src="./images/i3.png" alt="item3">
+                            <img class="shipItem__img" src="./images/i3.png" alt="item3">
                             <p class="shipItem__text">«Ночной ястреб» –
                                 Надежный корабль-перехватчик</p>
                             <div class="price_block">
@@ -52,7 +52,7 @@
                             <button class="btn">Заказать</button>
                         </div>
                         <div class="shipItem">
-                            <img src="./images/i4.png" alt="item4">
+                            <img class="shipItem__img" src="./images/i4.png" alt="item4">
                             <p class="shipItem__text">«Карающий луч» –
                                 Полнофункциональный боевой корабль низкой ценовой категории</p>
                             <div class="price_block">
@@ -61,7 +61,7 @@
                             <button class="btn">Заказать</button>
                         </div>
                         <div class="shipItem">
-                            <img src="./images/i5.png" alt="item5">
+                            <img class="shipItem__img" src="./images/i5.png" alt="item5">
                             <p class="shipItem__text">«Антидоминатор» –
                                 Дорогое и эффективное оружие против доминаторов.</p>
                             <div class="price_block">
@@ -72,54 +72,53 @@
                     </div>
                 </section>
                 <section class="shipDay">
-                    <div class="container">
                         <h1 class="title_h1">Корабль дня:</h1>
                         <div class="shipDay__inner">
                             <div class="shipDay__info">
                                 <img class="shipDay__info__img" src="./images/i6.png" alt="chip day">
                                 <div class="shipDay__info_characteristics">
                                     <div class="power">
-                                        <img src="./images/static/icon_spaceship.png" alt="ship">
-                                        <img src="./images/static/icon_spaceship.png" alt="ship">
-                                        <img src="./images/static/icon_spaceship.png" alt="ship">
-                                        <img src="./images/static/icon_spaceship.png" alt="ship">
-                                        <img src="./images/static/icon_spaceship.png" alt="ship">
+                                        <img src="./images/static/icon_spaceship.svg" alt="ship">
+                                        <img src="./images/static/icon_spaceship.svg" alt="ship">
+                                        <img src="./images/static/icon_spaceship.svg" alt="ship">
+                                        <img src="./images/static/icon_spaceship.svg" alt="ship">
+                                        <img src="./images/static/icon_spaceship.svg" alt="ship">
                                     </div>
                                     <h3 class="shipDay__name">«Цербер»</h3>
                                     <p class="shipDay__text">Маневренное патрульное судно, предназначенное для охраны систем.</p>
-                                    <div class="shipDay__price">
-                                        <span class="price_old">$1600</span>
-                                        <span class="price_old">$1400</span>
-                                        <span class="price">$800</span>
+                                    <div class="shipDay__priceBlock">
+                                        <span class="shipDay__price price_old">$1600</span>
+                                        <span class="shipDay__price price_old">$1400</span>
+                                        <span class="shipDay__price price_current">$800</span>
                                         <div class="discount">-50%</div>
                                     </div>
                                     <ul class="economy">
-                                        <li class="economy__itom">Скидка SPACESHOP <span>$200</span></li>
-                                        <li class="economy__itom">Промокод «КОРАБЛЬДНЯ3» <span>$600</span></li>
-                                        <li class="economy__itom total">Вы эĸономите <span>$800</span></li>
+                                        <li class="economy__itom"><p>Скидка SPACESHOP</p><span>$200</span></li>
+                                        <li class="economy__itom"><p>Промокод «КОРАБЛЬДНЯ3»</p><span>$600</span></li>
+                                        <li class="economy__itom"><p>Вы эĸономите</p><span class="total">$800</span></li>
                                     </ul>
                                 </div>
                             </div>
-                            <div>КОРАБЛЬДНЯ3</div>
+                            <div class="promo_code">КОРАБЛЬДНЯ3</div>
                             <button class="btn">Заказать</button>
                         </div>
-                    </div>
                 </section>
             </div>
         </main>
         <footer class="footer">
             <div class="container">
+
+                <p class="social__text">Присоединяйтесь к нам в соц. сетях!</p>
                 <div class="social">
-                    <p class="social__text">Присоединяйтесь к нам в соц. сетях!</p>
-                    <a href="#" class="social_link"><img src="./images/static/icon_yt.png" alt="youtube"></a>
-                    <a href="#" class="social_link"><img src="./images/static/icon_fb.png" alt="youtube"></a>
-                    <a href="#" class="social_link"><img src="./images/static/icon_inst.png" alt="youtube"></a>
+                    <a href="#" class="social_link"><img src="./images/static/icon_yt.svg" alt="youtube"></a>
+                    <a href="#" class="social_link"><img src="./images/static/icon_fb.svg" alt="youtube"></a>
+                    <a href="#" class="social_link"><img src="./images/static/icon_inst.svg" alt="youtube"></a>
                 </div>
                 <div class="footer__bottom">
                     <div class="footer__bootom__info">
                         <p>Контакты:</p>
-                        <a href="tel:01233456789">0 (123) 345-67-89</a>
-                        <a href="mailto:contact@spaceshop.sp">contact@spaceshop.sp</a>
+                        <a class="footer__tel" href="tel:01233456789">0 (123) 345-67-89</a>
+                        <a  href="mailto:contact@spaceshop.sp">contact@spaceshop.sp</a>
                     </div>
                     <a href="#" class="logo">Space shop</a>
                 </div>
